@@ -1,0 +1,188 @@
+/* global */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    min-block-size: 80vh;    
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-size: 1.25rem;
+    color: #353535;
+    font-family: sans-serif;
+    background-color: #F7F4F4;
+    margin: auto;
+    line-height: 1.75rem;
+    min-block-size: 100%;
+}
+
+.wrapper {
+    padding-inline: 3vw;
+}
+
+/* header and nav*/
+
+.nav {
+    padding-inline: 3vw;
+    background-color: #8B5CF6;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-size: 2rem;
+
+    font-weight: bold;
+    color: #F7F4F4;
+}
+
+.nav-items {
+    list-style: none;
+    padding: 0px;
+    color: #F7F4F4;
+
+    display: flex;
+    gap: 20px;
+}
+
+.nav-items li {
+    width: 4.5em;
+    border: 2px #F7F4F4 solid;
+    text-align: center;
+    padding: 5px;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: #F7F4F4;
+    background-color: #8B5CF6;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-items li:hover a {
+    background-color: #F7F4F4;
+    color: #8B5CF6;
+}
+
+.nav-items li:hover {
+    background-color: #F7F4F4;
+}
+
+.header {
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 30px;
+}
+
+.header p {
+    inline-size: 55vw;
+    display: inline-block;
+    margin-block-start: 0px;
+}
+
+.accent {
+    color: #32cb60;
+}
+
+/* main */
+
+
+/* center piece */
+a {
+    text-decoration: none;
+    color: #8B5CF6;
+}
+
+a:hover {
+    color: #b8a1ed;
+}
+
+.center-piece {
+    display: flex;
+    flex-direction: row;
+    margin-block: 35px;
+    padding: 0px;
+    align-items: baseline;
+    align-items: stretch;
+}
+
+.center-piece .projects, .center-piece .work-experience {
+    flex: 1;
+    border-block: 3px solid #353535;
+}
+
+.center-piece .education {
+    flex: 1.5;
+    border: 3px solid #353535;
+    padding-inline: 3%;
+}
+
+.projects h2 {
+    padding-inline: 10%;
+}
+
+.project-list ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.project-list ul li {
+    border-block-end: 2px solid #353535;
+    padding-inline: 10%;
+    padding-block: 3%;
+}
+
+.work-experience h2 {
+    padding-inline: 10%;
+}
+
+.work .occupation {
+    padding-inline: 10%;
+}
+
+/* recommendations and reviews */
+
+.review-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 20px;
+    max-inline-size: 30%;
+    padding-inline: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .reviewer {
+    color: rgb(157, 156, 156);
+}
+
+/* footer */
+
+.footer {
+    font-size: 1rem;
+    padding-inline: 3vw;
+    background-color: #8B5CF6;
+    color: #F7F4F4;
+    padding: 0px;
+    margin-block-start: auto;
+}
+
+.footer p {
+    padding-inline: 3vw;
+}
